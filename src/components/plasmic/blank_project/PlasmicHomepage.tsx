@@ -61,6 +61,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import Button2 from "../../Button2"; // plasmic-import: ZVEi9idvlzT1/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/styleTokensProvider
 
@@ -68,6 +69,11 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import * as projectcss from "./plasmic.module.css"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectcss
 import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: _VyosKy2-Hc-/css
+
+import CircleIcon from "./icons/PlasmicIcon__Circle"; // plasmic-import: gZuwXhxC2QAl/icon
+import ChevronDownIcon from "./icons/PlasmicIcon__ChevronDown"; // plasmic-import: wjngPrVRJ2Ty/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: -0XBiYJxiCyg/icon
+import shaolinPng1ZVn6SXqShVl from "./images/shaolinPng.png"; // plasmic-import: 1ZVn6SXqSHVl/picture
 
 createPlasmicElementProxy;
 
@@ -82,8 +88,8 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  text?: Flex__<"div">;
-  h1?: Flex__<"h1">;
+  img?: Flex__<typeof PlasmicImg__>;
+  foreground2?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {
@@ -149,33 +155,189 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={"text"}
-            data-plasmic-override={overrides.text}
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text
-            )}
-          >
-            <React.Fragment>
-              <React.Fragment>{""}</React.Fragment>
-              {
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
+          <div className={classNames(projectcss.all, sty.freeBox__zmBp)}>
+            <div className={classNames(projectcss.all, sty.freeBox__djOmz)}>
+              <PlasmicImg__
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"40px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"40px"}
+                src={{
+                  src: shaolinPng1ZVn6SXqShVl,
+                  fullWidth: 1536,
+                  fullHeight: 1024,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox__kvpDj)}>
+                <PlasmicLink__
                   className={classNames(
                     projectcss.all,
-                    projectcss.h1,
+                    projectcss.a,
                     projectcss.__wab_text,
-                    sty.h1
+                    sty.link___3OGb
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"gatsby"}
+                >
+                  {"\u5173\u4e8e\u6211\u4eec"}
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__jfkMb
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"gatsby"}
+                >
+                  {"\u8bfe\u7a0b\u5185\u5bb9"}
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__aC0TK
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"gatsby"}
+                >
+                  {"\u6700\u65b0\u52a8\u6001"}
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___1EKIm
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"gatsby"}
+                >
+                  {"\u5c11\u6797\u6587\u5316"}
+                </PlasmicLink__>
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__usfaM)}
+                  color={"black"}
+                  end={
+                    <ChevronDownIcon
+                      className={classNames(projectcss.all, sty.svg__ueMqi)}
+                      role={"img"}
+                    />
+                  }
+                  label={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ngn3K
+                      )}
+                    >
+                      {"\u62a5\u540d"}
+                    </div>
+                  }
+                  start={
+                    <CircleIcon
+                      className={classNames(projectcss.all, sty.svg___2W2Og)}
+                      role={"img"}
+                    />
+                  }
+                />
+              </div>
+            </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__spgbQ)}>
+            <div
+              data-plasmic-name={"foreground2"}
+              data-plasmic-override={overrides.foreground2}
+              className={classNames(projectcss.all, sty.foreground2)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__yqBRr)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__iJ0Qk
                   )}
                 >
-                  {"Shaolin Cultural Centre Kuala Lumpur"}
-                </h1>
-              }
-              <React.Fragment>{""}</React.Fragment>
-            </React.Fragment>
+                  <React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ textDecoration: "underline" }}
+                    >
+                      {"\u5409\u9686\u5761\u5c11\u6797\u6587\u5316\u4e2d\u5fc3"}
+                    </span>
+                  </React.Fragment>
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__v6S4U
+                  )}
+                >
+                  {"Shao Lin Cultural Centre Kuala Lumpur"}
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox___2DlCo)}>
+                <Button2
+                  className={classNames("__wab_instance", sty.button2__i7HgY)}
+                  color={"white"}
+                  end={
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__wFLq)}
+                      role={"img"}
+                    />
+                  }
+                  iconEnd={true}
+                  label={
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__tH9RZ
+                      )}
+                    >
+                      {"\u9a6c\u4e0a\u4e60\u6b66"}
+                    </div>
+                  }
+                  size={"extraLarge"}
+                  start={
+                    <CircleIcon
+                      className={classNames(projectcss.all, sty.svg__tEruR)}
+                      role={"img"}
+                    />
+                  }
+                />
+
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__qPclC
+                  )}
+                  component={Link}
+                  href={"https://www.plasmic.app/"}
+                  platform={"gatsby"}
+                >
+                  {"Learn more..."}
+                </PlasmicLink__>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,17 +346,17 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "h1"],
-  text: ["text", "h1"],
-  h1: ["h1"]
+  root: ["root", "img", "foreground2"],
+  img: ["img"],
+  foreground2: ["foreground2"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  text: "div";
-  h1: "h1";
+  img: typeof PlasmicImg__;
+  foreground2: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -259,8 +421,8 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
-    h1: makeNodeComponent("h1"),
+    img: makeNodeComponent("img"),
+    foreground2: makeNodeComponent("foreground2"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

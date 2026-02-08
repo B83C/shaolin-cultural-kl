@@ -279,6 +279,19 @@
           "cssFilePath": "plasmic/blank_project/PlasmicButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "ZVEi9idvlzT1",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "sXCRtjYKZPsLyt67ZBQv6B",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -316,6 +329,11 @@
           "id": "7EpIXNLVQs4_",
           "name": "LinkedinSvgIcon",
           "moduleFilePath": "plasmic/blank_project/icons/PlasmicIcon__LinkedinSvg.tsx"
+        },
+        {
+          "id": "-0XBiYJxiCyg",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/blank_project/icons/PlasmicIcon__Icon4.tsx"
         }
       ],
       "images": [
@@ -498,10 +516,20 @@
           "id": "W-jKOF-ag67g",
           "name": "pricing-img.svg",
           "filePath": "plasmic/blank_project/images/pricingImgSvg.svg"
+        },
+        {
+          "id": "N-0juL1SFwVH",
+          "name": "image 13",
+          "filePath": "plasmic/blank_project/images/image13.svg"
+        },
+        {
+          "id": "1ZVn6SXqSHVl",
+          "name": "shaolin.png",
+          "filePath": "plasmic/blank_project/images/shaolinPng.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/blank_project/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "styleTokensProviderFilePath": "plasmic/blank_project/PlasmicStyleTokensProvider.tsx",
       "dataTokensFilePath": "",
@@ -518,6 +546,37 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/react_scroll_parallax_global/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/react_scroll_parallax_global/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "displayName": "hostless-scroll-parallax",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "displayName": "global-parallax-provider",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
       "customFunctions": []
