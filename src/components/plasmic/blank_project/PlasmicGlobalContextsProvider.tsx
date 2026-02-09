@@ -9,18 +9,31 @@ import * as React from "react";
 
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { ParallaxProviderWrapper } from "@plasmicpkgs/react-scroll-parallax";
+import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms";
+import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   parallaxProviderWrapperProps?: Partial<
     Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
   >;
+  cmsCredentialsProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
+  >;
+  antdConfigProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
+  >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, parallaxProviderWrapperProps } = props;
+  const {
+    children,
+    parallaxProviderWrapperProps,
+    cmsCredentialsProviderProps,
+    antdConfigProviderProps
+  } = props;
 
   return (
     <ParallaxProviderWrapper
@@ -32,7 +45,128 @@ export default function GlobalContextsProvider(
           : undefined
       }
     >
-      {children}
+      <CmsCredentialsProvider
+        {...cmsCredentialsProviderProps}
+        databaseId={
+          cmsCredentialsProviderProps &&
+          "databaseId" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.databaseId!
+            : "nnuT9T8Xy1yPXSudBFpucF"
+        }
+        databaseToken={
+          cmsCredentialsProviderProps &&
+          "databaseToken" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.databaseToken!
+            : "xV9aZrBT1dkMKaa7hPCsk8x9HQ9emY3TXUeC9twDFZUOEVIjtz8vGtQMpPdS0HZtLj0mam1lxFODMdcYSKg"
+        }
+        host={
+          cmsCredentialsProviderProps && "host" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.host!
+            : "https://data.plasmic.app"
+        }
+        locale={
+          cmsCredentialsProviderProps && "locale" in cmsCredentialsProviderProps
+            ? cmsCredentialsProviderProps.locale!
+            : ``
+        }
+      >
+        <AntdConfigProvider
+          {...antdConfigProviderProps}
+          borderRadius={
+            antdConfigProviderProps && "borderRadius" in antdConfigProviderProps
+              ? antdConfigProviderProps.borderRadius!
+              : 6
+          }
+          colorBgBase={
+            antdConfigProviderProps && "colorBgBase" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorBgBase!
+              : "#ffffff"
+          }
+          colorError={
+            antdConfigProviderProps && "colorError" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorError!
+              : "#ff4d4f"
+          }
+          colorInfo={
+            antdConfigProviderProps && "colorInfo" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorInfo!
+              : "#1677ff"
+          }
+          colorPrimary={
+            antdConfigProviderProps && "colorPrimary" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorPrimary!
+              : "#1677ff"
+          }
+          colorSuccess={
+            antdConfigProviderProps && "colorSuccess" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorSuccess!
+              : "#52c41a"
+          }
+          colorWarning={
+            antdConfigProviderProps && "colorWarning" in antdConfigProviderProps
+              ? antdConfigProviderProps.colorWarning!
+              : "#faad14"
+          }
+          controlHeight={
+            antdConfigProviderProps &&
+            "controlHeight" in antdConfigProviderProps
+              ? antdConfigProviderProps.controlHeight!
+              : 32
+          }
+          defaultDark={
+            antdConfigProviderProps && "defaultDark" in antdConfigProviderProps
+              ? antdConfigProviderProps.defaultDark!
+              : false
+          }
+          lineWidth={
+            antdConfigProviderProps && "lineWidth" in antdConfigProviderProps
+              ? antdConfigProviderProps.lineWidth!
+              : 1
+          }
+          loadingText={
+            antdConfigProviderProps && "loadingText" in antdConfigProviderProps
+              ? antdConfigProviderProps.loadingText!
+              : undefined
+          }
+          removeLoading={
+            antdConfigProviderProps &&
+            "removeLoading" in antdConfigProviderProps
+              ? antdConfigProviderProps.removeLoading!
+              : undefined
+          }
+          sizeStep={
+            antdConfigProviderProps && "sizeStep" in antdConfigProviderProps
+              ? antdConfigProviderProps.sizeStep!
+              : 4
+          }
+          sizeUnit={
+            antdConfigProviderProps && "sizeUnit" in antdConfigProviderProps
+              ? antdConfigProviderProps.sizeUnit!
+              : 4
+          }
+          themeStyles={
+            antdConfigProviderProps && "themeStyles" in antdConfigProviderProps
+              ? antdConfigProviderProps.themeStyles!
+              : true
+                ? {
+                    fontFamily: "Inter",
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    lineHeight: "1.5",
+                    color: "#000000",
+                    letterSpacing: "normal"
+                  }
+                : undefined
+          }
+          wireframe={
+            antdConfigProviderProps && "wireframe" in antdConfigProviderProps
+              ? antdConfigProviderProps.wireframe!
+              : false
+          }
+        >
+          {children}
+        </AntdConfigProvider>
+      </CmsCredentialsProvider>
     </ParallaxProviderWrapper>
   );
 }

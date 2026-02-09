@@ -1,0 +1,20 @@
+.root:global(.__wab_instance) {
+  animation: none;
+  width: 100%;
+  height: auto;
+  min-height: 0vh;
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  color: #000000;
+  box-shadow: none;
+  opacity: 1;
+  background: transparent;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+}
+.svg {
+  object-fit: cover;
+  max-width: 100%;
+  height: 1em;
+}

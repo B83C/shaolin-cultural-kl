@@ -61,7 +61,9 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import Button2 from "../../Button2"; // plasmic-import: ZVEi9idvlzT1/component
+import PageLayout from "../../PageLayout"; // plasmic-import: v5rlei5vjymQ/component
+import { Video } from "@plasmicpkgs/plasmic-basic-components";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/styleTokensProvider
 
@@ -70,10 +72,11 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as projectcss from "./plasmic.module.css"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectcss
 import * as sty from "./PlasmicHomepage.module.css"; // plasmic-import: _VyosKy2-Hc-/css
 
-import CircleIcon from "./icons/PlasmicIcon__Circle"; // plasmic-import: gZuwXhxC2QAl/icon
-import ChevronDownIcon from "./icons/PlasmicIcon__ChevronDown"; // plasmic-import: wjngPrVRJ2Ty/icon
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: -0XBiYJxiCyg/icon
-import shaolinPng1ZVn6SXqShVl from "./images/shaolinPng.png"; // plasmic-import: 1ZVn6SXqSHVl/picture
+import ShaolinFixedSvgIcon from "../\u5409\u9686\u5761\u5C11\u6797\u6587\u5316\u4E2D\u5FC3_back/icons/PlasmicIcon__ShaolinFixedSvg"; // plasmic-import: x1VznO5OteXg/icon
+import FacebookSvgIcon from "./icons/PlasmicIcon__FacebookSvg"; // plasmic-import: JlchEfaSEhHS/icon
+import Icon28Icon from "../\u5409\u9686\u5761\u5C11\u6797\u6587\u5316\u4E2D\u5FC3_back/icons/PlasmicIcon__Icon28"; // plasmic-import: 5-WMc0CFCtNY/icon
+import image2Lzsi8OqIti7S from "../\u5409\u9686\u5761\u5C11\u6797\u6587\u5316\u4E2D\u5FC3_back/images/image2.png"; // plasmic-import: LZSI8OQIti7S/picture
+import image3CuU75K6Ho6Ye from "../\u5409\u9686\u5761\u5C11\u6797\u6587\u5316\u4E2D\u5FC3_back/images/image3.png"; // plasmic-import: CuU75K6ho6YE/picture
 
 createPlasmicElementProxy;
 
@@ -88,8 +91,17 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  img?: Flex__<typeof PlasmicImg__>;
-  foreground2?: Flex__<"div">;
+  页面格式?: Flex__<typeof PageLayout>;
+  首页?: Flex__<"div">;
+  htmlVideo?: Flex__<typeof Video>;
+  建所宗旨?: Flex__<"div">;
+  开设对象?: Flex__<"div">;
+  文化交流?: Flex__<"div">;
+  htmlVideo2?: Flex__<typeof Video>;
+  会所地址?: Flex__<"div">;
+  embedHtml?: Flex__<typeof Embed>;
+  footer?: Flex__<"div">;
+  columns?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {
@@ -155,187 +167,317 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox__zmBp)}>
-            <div className={classNames(projectcss.all, sty.freeBox__djOmz)}>
+          <PageLayout
+            data-plasmic-name={"\u9875\u9762\u683c\u5f0f"}
+            data-plasmic-override={overrides.页面格式}
+            className={classNames("__wab_instance", sty.页面格式)}
+          />
+
+          <div
+            data-plasmic-name={"\u9996\u9875"}
+            data-plasmic-override={overrides.首页}
+            className={classNames(projectcss.all, sty.首页)}
+          >
+            <Video
+              data-plasmic-name={"htmlVideo"}
+              data-plasmic-override={overrides.htmlVideo}
+              autoPlay={true}
+              className={classNames("__wab_instance", sty.htmlVideo)}
+              controls={false}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              ref={ref => {
+                $refs["htmlVideo"] = ref;
+              }}
+              src={
+                "https://pub-7054b7b403a34f7cbd719e95fda764ac.r2.dev/test_1.webm"
+              }
+            />
+          </div>
+          <div
+            data-plasmic-name={"\u5efa\u6240\u5b97\u65e8"}
+            data-plasmic-override={overrides.建所宗旨}
+            className={classNames(projectcss.all, sty.建所宗旨)}
+          >
+            <div className={classNames(projectcss.all, sty.column___32Kli)}>
               <PlasmicImg__
-                data-plasmic-name={"img"}
-                data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(sty.img)}
-                displayHeight={"40px"}
+                className={classNames(sty.img__pxgIb)}
+                displayHeight={"auto"}
                 displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
+                displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"40px"}
+                displayWidth={"auto"}
+                loading={"lazy"}
                 src={{
-                  src: shaolinPng1ZVn6SXqShVl,
-                  fullWidth: 1536,
-                  fullHeight: 1024,
+                  src: image2Lzsi8OqIti7S,
+                  fullWidth: 2048,
+                  fullHeight: 1536,
                   aspectRatio: undefined
                 }}
               />
-
-              <div className={classNames(projectcss.all, sty.freeBox__kvpDj)}>
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___3OGb
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/"}
-                  platform={"gatsby"}
-                >
-                  {"\u5173\u4e8e\u6211\u4eec"}
-                </PlasmicLink__>
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__jfkMb
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/"}
-                  platform={"gatsby"}
-                >
-                  {"\u8bfe\u7a0b\u5185\u5bb9"}
-                </PlasmicLink__>
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__aC0TK
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/"}
-                  platform={"gatsby"}
-                >
-                  {"\u6700\u65b0\u52a8\u6001"}
-                </PlasmicLink__>
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link___1EKIm
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/"}
-                  platform={"gatsby"}
-                >
-                  {"\u5c11\u6797\u6587\u5316"}
-                </PlasmicLink__>
-                <Button2
-                  className={classNames("__wab_instance", sty.button2__usfaM)}
-                  color={"black"}
-                  end={
-                    <ChevronDownIcon
-                      className={classNames(projectcss.all, sty.svg__ueMqi)}
-                      role={"img"}
-                    />
-                  }
-                  label={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__ngn3K
-                      )}
-                    >
-                      {"\u62a5\u540d"}
-                    </div>
-                  }
-                  start={
-                    <CircleIcon
-                      className={classNames(projectcss.all, sty.svg___2W2Og)}
-                      role={"img"}
-                    />
-                  }
-                />
+            </div>
+            <div className={classNames(projectcss.all, sty.column___1Lrd)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__aN4Tl
+                )}
+              >
+                {
+                  "\u5409\u9686\u5761\u5c11\u6797\u6587\u5316\u4e2d\u5fc3\u6210\u7acb\u4e8e2016\u5e74\uff0c\n\u4f5c\u4e3a\u5c11\u6797\u5bfa\u9a7b\u9a6c\u6765\u897f\u4e9a\u7684\u6587\u5316\u4e2d\u5fc3\uff0c\n\u79c9\u627f\u201c\u5f18\u626c\u5c11\u6797\u7cbe\u795e\u3001\u4f20\u627f\u5c11\u6797\u529f\u592b\u3001\u670d\u52a1\u4eba\u7c7b\u5065\u5eb7\u201d\u7684\u5b97\u65e8\uff0c\n\u81f4\u529b\u4e8e\u901a\u8fc7\u63a8\u5e7f\u5c11\u6797\u7985\u6b66\u6587\u5316\uff0c\n\u4fc3\u8fdb\u56fd\u9645\u6587\u5316\u4ea4\u6d41\u548c\u4eba\u7c7b\u6587\u660e\u8fdb\u6b65\u3002"
+                }
               </div>
             </div>
           </div>
-          <div className={classNames(projectcss.all, sty.freeBox__spgbQ)}>
-            <div
-              data-plasmic-name={"foreground2"}
-              data-plasmic-override={overrides.foreground2}
-              className={classNames(projectcss.all, sty.foreground2)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__yqBRr)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iJ0Qk
-                  )}
-                >
-                  <React.Fragment>
-                    <span
-                      className={"plasmic_default__all plasmic_default__span"}
-                      style={{ textDecoration: "underline" }}
-                    >
-                      {"\u5409\u9686\u5761\u5c11\u6797\u6587\u5316\u4e2d\u5fc3"}
-                    </span>
-                  </React.Fragment>
-                </div>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__v6S4U
-                  )}
-                >
-                  {"Shao Lin Cultural Centre Kuala Lumpur"}
-                </div>
+          <div
+            data-plasmic-name={"\u5f00\u8bbe\u5bf9\u8c61"}
+            data-plasmic-override={overrides.开设对象}
+            className={classNames(projectcss.all, sty.开设对象)}
+          >
+            <div className={classNames(projectcss.all, sty.column__yy3K5)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__cllwQ
+                )}
+              >
+                {
+                  "\u4e2d\u5fc3\u4ee5\u5c11\u6797\u6b66\u672f\u4e3a\u6838\u5fc3\uff0c\u5f00\u8bbe\u5c11\u6797\u6bb5\u54c1\u5236\u3001\u5c11\u6797\u517b\u751f\u529f\u6cd5\u3001\u7ade\u6280\u6b66\u672f\u3001\u6563\u6253\u7b49\u8bfe\u7a0b\uff0c\u9002\u5408\u5404\u5e74\u9f84\u6bb5\u548c\u6c34\u5e73\u7684\u5b66\u5458\u3002\n"
+                }
               </div>
-              <div className={classNames(projectcss.all, sty.freeBox___2DlCo)}>
-                <Button2
-                  className={classNames("__wab_instance", sty.button2__i7HgY)}
-                  color={"white"}
-                  end={
-                    <Icon4Icon
-                      className={classNames(projectcss.all, sty.svg__wFLq)}
-                      role={"img"}
-                    />
-                  }
-                  iconEnd={true}
-                  label={
+            </div>
+            <div className={classNames(projectcss.all, sty.column__vfONn)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__uUWK)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: image3CuU75K6Ho6Ye,
+                  fullWidth: 2048,
+                  fullHeight: 1366,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
+          </div>
+          <div
+            data-plasmic-name={"\u6587\u5316\u4ea4\u6d41"}
+            data-plasmic-override={overrides.文化交流}
+            className={classNames(projectcss.all, sty.文化交流)}
+          >
+            <div className={classNames(projectcss.all, sty.column___6NRwZ)}>
+              <Video
+                data-plasmic-name={"htmlVideo2"}
+                data-plasmic-override={overrides.htmlVideo2}
+                autoPlay={true}
+                className={classNames("__wab_instance", sty.htmlVideo2)}
+                controls={false}
+                loop={true}
+                muted={true}
+                playsInline={true}
+                ref={ref => {
+                  $refs["htmlVideo2"] = ref;
+                }}
+                src={
+                  "https://pub-7054b7b403a34f7cbd719e95fda764ac.r2.dev/2.3K%20views%20%C2%B7%2043%20reactions%20%EF%BD%9C%20%E4%BB%8E%E8%BF%99%E4%B8%80%E5%88%BB%E5%BC%80%E5%A7%8B%20%E6%8A%8A%E8%8A%82%E5%A5%8F%E6%94%BE%E6%85%A2%E4%B8%80%E7%82%B9%20%E8%AE%A9%E8%BA%AB%E4%BD%93%E5%92%8C%E5%BF%83%E6%9C%89%E6%9C%BA%E4%BC%9A%E5%9B%9E%E5%88%B0%E5%90%8C%E4%B8%80%E4%B8%AA%E5%9C%B0%E6%96%B9%20%23%E5%90%89%E9%9A%86%E5%9D%A1%20%23%E9%9B%AA%E9%9A%86%E5%B0%91%E6%9E%97%E6%96%87%E5%8C%96%E5%8D%8F%E4%BC%9A%20%23%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%B0%91%E6%9E%97%E4%BF%AE%20%23%E6%9C%8D%E5%8A%A1%E4%BA%BA%E7%B1%BB%E5%81%A5%E5%BA%B7%20%23shaolin%20%23shaolinkungfu%20%23%E5%85%BB%E7%94%9F%20%EF%BD%9C%20Shaolin%20Culture%20Center%20in%20Kuala%20Lumpur%20%5B1151544307058452%5D.mp4"
+                }
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.column__iaaeb)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___4DCjq
+                )}
+              >
+                {
+                  "\n\u4e2d\u5fc3\u79ef\u6781\u53c2\u4e0e\u56fd\u5185\u5916\u6587\u5316\u4e0e\u6b66\u672f\u4ea4\u6d41\uff0c\u63a8\u52a8\u5c11\u6797\u6587\u5316\u5728\u9a6c\u6765\u897f\u4e9a\u7684\u4f20\u64ad\u4e0e\u53d1\u5c55\uff0c\u4fc3\u8fdb\u4e2d\u9a6c\u4e24\u56fd\u7684\u6587\u5316\u878d\u5408\u4e0e\u5408\u4f5c\u3002\n"
+                }
+              </div>
+            </div>
+          </div>
+          <div
+            data-plasmic-name={"\u4f1a\u6240\u5730\u5740"}
+            data-plasmic-override={overrides.会所地址}
+            className={classNames(projectcss.all, sty.会所地址)}
+          >
+            <div className={classNames(projectcss.all, sty.column__qOdB)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pgLcd
+                )}
+              >
+                {"\u5bfb\u627e\u6211\u4eec"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__gEo9O
+                )}
+              >
+                {
+                  "3A-08, Jalan Desa Aman 1, Taman Desa Aman, 56100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+                }
+              </div>
+            </div>
+            <div className={classNames(projectcss.all, sty.column__xjwmk)}>
+              <Embed
+                data-plasmic-name={"embedHtml"}
+                data-plasmic-override={overrides.embedHtml}
+                className={classNames("__wab_instance", sty.embedHtml)}
+                code={
+                  '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9992000205793!2d101.739679!3d3.094870899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3591f26d08c9%3A0xebe195d9e240bb6d!2zU2hhb2xpbiBDdWx0dXJhbCBDZW50ZXIgT2YgTWFsYXlzaWEg6ams5p2l6KW_5Lqa5bCR5p6X5paH5YyW5Lit5b-D!5e0!3m2!1sen!2smy!4v1770641307733!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+                }
+              />
+            </div>
+          </div>
+          <div
+            data-plasmic-name={"footer"}
+            data-plasmic-override={overrides.footer}
+            className={classNames(projectcss.all, sty.footer)}
+          >
+            <div
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
+            >
+              <div className={classNames(projectcss.all, sty.column___5PMKm)}>
+                <div className={classNames(projectcss.all, sty.freeBox__e1TH)}>
+                  <ShaolinFixedSvgIcon
+                    className={classNames(projectcss.all, sty.svg__gABw)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yjZpA)}
+                  >
                     <div
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__tH9RZ
+                        sty.text__dsGbP
                       )}
                     >
-                      {"\u9a6c\u4e0a\u4e60\u6b66"}
+                      {"\u5173\u6ce8\u6211\u4eec  \nConnect with us"}
                     </div>
-                  }
-                  size={"extraLarge"}
-                  start={
-                    <CircleIcon
-                      className={classNames(projectcss.all, sty.svg__tEruR)}
-                      role={"img"}
-                    />
-                  }
-                />
-
-                <PlasmicLink__
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__qPclC
-                  )}
-                  component={Link}
-                  href={"https://www.plasmic.app/"}
-                  platform={"gatsby"}
-                >
-                  {"Learn more..."}
-                </PlasmicLink__>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__oQjey)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__zqXNh
+                        )}
+                        component={Link}
+                        href={"https://www.facebook.com/klshaolin"}
+                        platform={"gatsby"}
+                        target={"_blank"}
+                      >
+                        <FacebookSvgIcon
+                          className={classNames(projectcss.all, sty.svg__kl8J3)}
+                          link={"https://www.facebook.com/klshaolin"}
+                          role={"img"}
+                        />
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__fkBUf
+                        )}
+                        component={Link}
+                        href={"https://www.instagram.com/shaolin_malaysia"}
+                        platform={"gatsby"}
+                      >
+                        <Icon28Icon
+                          className={classNames(projectcss.all, sty.svg__d6Vl)}
+                          role={"img"}
+                        />
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className={classNames(projectcss.all, sty.column__uOxH8)}>
+                <div className={classNames(projectcss.all, sty.freeBox__mgkEc)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1Ynqb
+                    )}
+                  >
+                    {"\u6587\u5316\u4e2d\u5fc3"}
+                  </div>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__gwle1
+                    )}
+                    component={Link}
+                    href={"https://www.plasmic.app/"}
+                    platform={"gatsby"}
+                  >
+                    {"\u7b80\u4ecb"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__lNfsZ
+                    )}
+                    component={Link}
+                    href={"https://www.plasmic.app/"}
+                    platform={"gatsby"}
+                  >
+                    {"\u8054\u7cfb\u65b9\u5f0f"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__ykvHl
+                    )}
+                    component={Link}
+                    href={"https://www.plasmic.app/"}
+                    platform={"gatsby"}
+                  >
+                    {"\u5e08\u8d44"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__gb7Hi
+                    )}
+                    component={Link}
+                    href={"https://www.plasmic.app/"}
+                    platform={"gatsby"}
+                  >
+                    {"\u4e60\u6b66\u65e5\u5e38"}
+                  </PlasmicLink__>
+                </div>
               </div>
             </div>
           </div>
@@ -346,17 +488,48 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "img", "foreground2"],
-  img: ["img"],
-  foreground2: ["foreground2"]
+  root: [
+    "root",
+    "\u9875\u9762\u683c\u5f0f",
+    "\u9996\u9875",
+    "htmlVideo",
+    "\u5efa\u6240\u5b97\u65e8",
+    "\u5f00\u8bbe\u5bf9\u8c61",
+    "\u6587\u5316\u4ea4\u6d41",
+    "htmlVideo2",
+    "\u4f1a\u6240\u5730\u5740",
+    "embedHtml",
+    "footer",
+    "columns"
+  ],
+  页面格式: ["\u9875\u9762\u683c\u5f0f"],
+  首页: ["\u9996\u9875", "htmlVideo"],
+  htmlVideo: ["htmlVideo"],
+  建所宗旨: ["\u5efa\u6240\u5b97\u65e8"],
+  开设对象: ["\u5f00\u8bbe\u5bf9\u8c61"],
+  文化交流: ["\u6587\u5316\u4ea4\u6d41", "htmlVideo2"],
+  htmlVideo2: ["htmlVideo2"],
+  会所地址: ["\u4f1a\u6240\u5730\u5740", "embedHtml"],
+  embedHtml: ["embedHtml"],
+  footer: ["footer", "columns"],
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  img: typeof PlasmicImg__;
-  foreground2: "div";
+  页面格式: typeof PageLayout;
+  首页: "div";
+  htmlVideo: typeof Video;
+  建所宗旨: "div";
+  开设对象: "div";
+  文化交流: "div";
+  htmlVideo2: typeof Video;
+  会所地址: "div";
+  embedHtml: typeof Embed;
+  footer: "div";
+  columns: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -421,8 +594,17 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    img: makeNodeComponent("img"),
-    foreground2: makeNodeComponent("foreground2"),
+    页面格式: makeNodeComponent("\u9875\u9762\u683c\u5f0f"),
+    首页: makeNodeComponent("\u9996\u9875"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
+    建所宗旨: makeNodeComponent("\u5efa\u6240\u5b97\u65e8"),
+    开设对象: makeNodeComponent("\u5f00\u8bbe\u5bf9\u8c61"),
+    文化交流: makeNodeComponent("\u6587\u5316\u4ea4\u6d41"),
+    htmlVideo2: makeNodeComponent("htmlVideo2"),
+    会所地址: makeNodeComponent("\u4f1a\u6240\u5730\u5740"),
+    embedHtml: makeNodeComponent("embedHtml"),
+    footer: makeNodeComponent("footer"),
+    columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
