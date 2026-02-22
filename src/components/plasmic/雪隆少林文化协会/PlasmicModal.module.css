@@ -1,0 +1,97 @@
+.ariaDialogTrigger:global(.__wab_instance) {
+  position: relative;
+}
+.svg__fs1Pf {
+  position: relative;
+  height: 1em;
+}
+.svg__nrl31 {
+  position: relative;
+  height: 1em;
+}
+.ariaModal:global(.__wab_instance) {
+  background: var(--token-jJbkqpwhxooT);
+  display: block;
+  color: var(--token-bs4xS1-pTr0l);
+  font-family: var(--token-flb5MjLXYakP);
+  font-size: var(--token-KNyXwoqV2PIT);
+  line-height: var(--token-jUGcwqYVrzXC);
+  outline-style: none;
+  box-shadow: 0px 24px 48px -12px #00000040;
+  border-radius: var(--token-i4KnhX_jmRxu);
+}
+.pcls_bUa947e5e405 {
+  background: var(--token-WSRu779D3RKC);
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  outline: none;
+}
+.ariaDialog:global(.__wab_instance) {
+  max-width: 90vw;
+  object-fit: cover;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  outline-style: none;
+}
+.h3__qdmNb {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-weight: 700;
+  font-size: var(--token-eJaHiy-dZYIN);
+  min-width: 0;
+  padding: var(--token-eW4NT0GqhCJz);
+}
+.scrollableContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: auto;
+  padding-left: var(--token-eW4NT0GqhCJz);
+  padding-right: var(--token-eW4NT0GqhCJz);
+}
+.freeBox__p4Tb6 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: var(--token-UJHygNNW-ccu);
+}
+.text__qecKd {
+  position: relative;
+}
+.freeBox__tHclp {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 0;
+  padding: var(--token-eW4NT0GqhCJz);
+}
+.svg___379Un {
+  position: relative;
+  height: 1em;
+}
+.text__omFcw {
+  padding-left: 0px;
+}
+.svg__rl9C {
+  position: relative;
+  height: 1em;
+}

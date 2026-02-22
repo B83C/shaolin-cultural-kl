@@ -61,6 +61,13 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
+import {
+  executePlasmicDataOp,
+  usePlasmicDataOp,
+  usePlasmicInvalidate
+} from "@plasmicapp/react-web/lib/data-sources";
+
 import { RichLayout } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-layout";
 import { _useGlobalVariants } from "../blank_project/plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { _useStyleTokens } from "../blank_project/PlasmicStyleTokensProvider"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/styleTokensProvider
@@ -70,32 +77,34 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as projectcss from "../blank_project/plasmic.module.css"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectcss
 import * as sty from "./PlasmicPageLayout.module.css"; // plasmic-import: v5rlei5vjymQ/css
 
-import ShaolinFixedSvgIcon from "./icons/PlasmicIcon__ShaolinFixedSvg"; // plasmic-import: x1VznO5OteXg/icon
+import IconShaolinSvgIcon from "../\u96EA\u9686\u5C11\u6797\u6587\u5316\u534F\u4F1A/icons/PlasmicIcon__IconShaolinSvg"; // plasmic-import: qLP1BpoiJnlb/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: p3g-H6pQ3hJf/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: 8PF6-UHTxZ75/icon
+import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: 5-WMc0CFCtNY/icon
+import iconShaolinSvg204UbqCJmzT00 from "../\u96EA\u9686\u5C11\u6797\u6587\u5316\u534F\u4F1A/images/iconShaolinSvg2.svg"; // plasmic-import: 04UbqCJmzT00/picture
 
 createPlasmicElementProxy;
 
-export type PlasmicPageLayout__VariantMembers = {
-  unnamedVariant: "unnamedVariant";
-};
-export type PlasmicPageLayout__VariantsArgs = {
-  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
-};
+export type PlasmicPageLayout__VariantMembers = {};
+export type PlasmicPageLayout__VariantsArgs = {};
 type VariantPropType = keyof PlasmicPageLayout__VariantsArgs;
-export const PlasmicPageLayout__VariantProps = new Array<VariantPropType>(
-  "unnamedVariant"
-);
+export const PlasmicPageLayout__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicPageLayout__ArgsType = {};
+export type PlasmicPageLayout__ArgsType = { 内容?: React.ReactNode };
 type ArgPropType = keyof PlasmicPageLayout__ArgsType;
-export const PlasmicPageLayout__ArgProps = new Array<ArgPropType>();
+export const PlasmicPageLayout__ArgProps = new Array<ArgPropType>(
+  "\u5185\u5bb9"
+);
 
 export type PlasmicPageLayout__OverridesType = {
   root?: Flex__<typeof RichLayout>;
-  svg?: Flex__<"svg">;
+  footer?: Flex__<"div">;
+  columns?: Flex__<"div">;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultPageLayoutProps {
-  unnamedVariant?: SingleBooleanChoiceArg<"unnamedVariant">;
+  内容?: React.ReactNode;
   className?: string;
 }
 
@@ -129,23 +138,10 @@ function PlasmicPageLayout__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
-  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
-    () => [
-      {
-        path: "unnamedVariant",
-        type: "private",
-        variableType: "variant",
-        initFunc: ({ $props, $state, $queries, $ctx }) => $props.unnamedVariant
-      }
-    ],
-    [$props, $ctx, $refs]
-  );
-  const $state = useDollarState(stateSpecs, {
-    $props,
-    $ctx,
-    $queries: {},
-    $refs
-  });
+  const globalVariants = _useGlobalVariants();
+
+  const dataSourcesCtx = usePlasmicDataSourceContext();
+  const plasmicInvalidate = usePlasmicInvalidate();
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -155,7 +151,34 @@ function PlasmicPageLayout__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      children={null}
+      actionsChildren={
+        <svg
+          className={classNames(projectcss.all, sty.svg__glCi4)}
+          onClick={async event => {
+            const $steps = {};
+
+            $steps["updateVariant"] = true
+              ? (() => {
+                  const actionArgs = {};
+                  return (({ vgroup, value }) => {
+                    if (typeof value === "string") {
+                      value = [value];
+                    }
+                    undefined;
+                  })?.apply(null, [actionArgs]);
+                })()
+              : undefined;
+            if (
+              $steps["updateVariant"] != null &&
+              typeof $steps["updateVariant"] === "object" &&
+              typeof $steps["updateVariant"].then === "function"
+            ) {
+              $steps["updateVariant"] = await $steps["updateVariant"];
+            }
+          }}
+          role={"img"}
+        />
+      }
       className={classNames(
         "__wab_instance",
         projectcss.root_reset,
@@ -164,42 +187,402 @@ function PlasmicPageLayout__RenderFunc(props: {
         styleTokensClassNames,
         sty.root,
         {
-          [sty.rootunnamedVariant]: hasVariant(
-            $state,
-            "unnamedVariant",
-            "unnamedVariant"
+          [sty.rootglobal_translation_enUs]: hasVariant(
+            globalVariants,
+            "translation",
+            "enUs"
           )
         }
       )}
       layout={"mix"}
       logoElement={
-        <ShaolinFixedSvgIcon
-          data-plasmic-name={"svg"}
-          data-plasmic-override={overrides.svg}
-          className={classNames(projectcss.all, sty.svg)}
+        <IconShaolinSvgIcon
+          className={classNames(projectcss.all, sty.svg__vpE3J)}
           role={"img"}
         />
       }
-      navMenuItems={(() => {
-        const __composite = [{ path: "/", name: null }];
-        __composite["0"]["name"] = "\u5173\u4e8e\u6211\u4eec";
-        return __composite;
-      })()}
-      title={"\u5409\u9686\u5761\u5c11\u6797\u6587\u5316\u4e2d\u5fc3"}
-    />
+      navMenuItems={
+        hasVariant(globalVariants, "translation", "enUs")
+          ? (() => {
+              const __composite = [
+                { path: null, name: null },
+                { path: "/", name: null },
+                { path: null, name: null },
+                { path: null, name: null },
+                { path: null, name: null }
+              ];
+              __composite["0"]["path"] = `/`;
+              __composite["0"]["name"] = "Home";
+              __composite["1"]["name"] = "About Us";
+              __composite["2"]["path"] = `/`;
+              __composite["2"]["name"] = "Programs";
+              __composite["3"]["path"] = "";
+              __composite["3"]["name"] = "Membership";
+              __composite["4"]["path"] = `/`;
+              __composite["4"]["name"] = "Vision";
+              return __composite;
+            })()
+          : (() => {
+              const __composite = [
+                { path: null, name: null },
+                { path: null, name: null },
+                { path: null, name: null },
+                { path: null, name: null },
+                { path: null, name: null }
+              ];
+              __composite["0"]["path"] = `/`;
+              __composite["0"]["name"] = "\u9996\u9875";
+              __composite["1"]["path"] = `/关于我们`;
+              __composite["1"]["name"] = "\u5173\u4e8e\u6211\u4eec";
+              __composite["2"]["path"] = `/课程项目`;
+              __composite["2"]["name"] = "\u8bfe\u7a0b\u9879\u76ee";
+              __composite["3"]["path"] = `/会员`;
+              __composite["3"]["name"] = "\u4f1a\u5458\u6ce8\u518c";
+              __composite["4"]["path"] = `/愿景`;
+              __composite["4"]["name"] = "\u613f\u666f";
+              return __composite;
+            })()
+      }
+      title={
+        hasVariant(globalVariants, "translation", "enUs")
+          ? "Selangor-KL Shaolin Society"
+          : "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"
+      }
+    >
+      {renderPlasmicSlot({
+        defaultContents: null,
+        value: args.内容
+      })}
+      <div
+        data-plasmic-name={"footer"}
+        data-plasmic-override={overrides.footer}
+        className={classNames(projectcss.all, sty.footer)}
+      >
+        <div
+          data-plasmic-name={"columns"}
+          data-plasmic-override={overrides.columns}
+          className={classNames(projectcss.all, sty.columns)}
+        >
+          <div className={classNames(projectcss.all, sty.column__rjRbQ)}>
+            <div className={classNames(projectcss.all, sty.freeBox__tNfvA)}>
+              <PlasmicImg__
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img)}
+                displayHeight={"40px"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"40px"}
+                src={{
+                  src: iconShaolinSvg204UbqCJmzT00,
+                  fullWidth: 1706.667,
+                  fullHeight: 1600,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <div className={classNames(projectcss.all, sty.freeBox___2Qhmq)}>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__gLwR5
+                  )}
+                >
+                  {
+                    "\u96ea\u5170\u83aa/\u5409\u9686\u5761\u5c11\u6797\u6587\u5316\u534f\u4f1a"
+                  }
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__t5D4
+                  )}
+                >
+                  {
+                    "\u81f4\u529b\u4e8e\u5728\u9a6c\u6765\u897f\u4e9a\u63a8\u5e7f\u6b63\u5b97\u5c11\u6797\u6587\u5316\u7684\u975e\u8425\u5229\u7ec4\u7ec7\u3002"
+                  }
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__yogiK)}>
+                  <Icon3Icon
+                    className={classNames(projectcss.all, sty.svg__va1SY)}
+                    role={"img"}
+                  />
+
+                  <Icon5Icon
+                    className={classNames(projectcss.all, sty.svg__pgxU5)}
+                    role={"img"}
+                  />
+
+                  <Icon28Icon
+                    className={classNames(projectcss.all, sty.svg___5CQgl)}
+                    role={"img"}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.column___8Wbgp)}>
+            <div className={classNames(projectcss.all, sty.freeBox__nbwzX)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__g6BsF
+                )}
+              >
+                {"\u5feb\u901f\u94fe\u63a5"}
+              </div>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__eDpIm
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goTo首页"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __gatsbyNavigate(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goTo首页"] != null &&
+                    typeof $steps["goTo首页"] === "object" &&
+                    typeof $steps["goTo首页"].then === "function"
+                  ) {
+                    $steps["goTo首页"] = await $steps["goTo首页"];
+                  }
+                }}
+                platform={"gatsby"}
+              >
+                {"\u9996\u9875"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__ffMQi
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goTo关于我们"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/关于我们` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __gatsbyNavigate(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goTo关于我们"] != null &&
+                    typeof $steps["goTo关于我们"] === "object" &&
+                    typeof $steps["goTo关于我们"].then === "function"
+                  ) {
+                    $steps["goTo关于我们"] = await $steps["goTo关于我们"];
+                  }
+                }}
+                platform={"gatsby"}
+              >
+                {"\u5173\u4e8e\u6211\u4eec"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___35Iu7
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goTo课程项目"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/课程项目` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __gatsbyNavigate(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goTo课程项目"] != null &&
+                    typeof $steps["goTo课程项目"] === "object" &&
+                    typeof $steps["goTo课程项目"].then === "function"
+                  ) {
+                    $steps["goTo课程项目"] = await $steps["goTo课程项目"];
+                  }
+                }}
+                platform={"gatsby"}
+              >
+                {"\u8bfe\u7a0b\u9879\u76ee"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__ei8Lc
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["goTo会员"] = true
+                    ? (() => {
+                        const actionArgs = { destination: `/会员` };
+                        return (({ destination }) => {
+                          if (
+                            typeof destination === "string" &&
+                            destination.startsWith("#")
+                          ) {
+                            document
+                              .getElementById(destination.substr(1))
+                              .scrollIntoView({ behavior: "smooth" });
+                          } else {
+                            __gatsbyNavigate(destination);
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["goTo会员"] != null &&
+                    typeof $steps["goTo会员"] === "object" &&
+                    typeof $steps["goTo会员"].then === "function"
+                  ) {
+                    $steps["goTo会员"] = await $steps["goTo会员"];
+                  }
+                }}
+                platform={"gatsby"}
+              >
+                {"\u4f1a\u5458"}
+              </PlasmicLink__>
+            </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.column__a3VAz)}>
+            <div className={classNames(projectcss.all, sty.freeBox__xaU5K)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__foMtg
+                )}
+              >
+                {"\u8054\u7cfb\u6211\u4eec"}
+              </div>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__xh2Ao
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                onClick={async event => {
+                  const $steps = {};
+
+                  $steps["useIntegration"] = true
+                    ? (() => {
+                        const actionArgs = {};
+                        return (async ({ dataOp, continueOnError }) => {
+                          try {
+                            const response = await executePlasmicDataOp(
+                              dataOp,
+                              {
+                                userAuthToken: dataSourcesCtx?.userAuthToken,
+                                user: dataSourcesCtx?.user
+                              }
+                            );
+                            await plasmicInvalidate(dataOp.invalidatedKeys);
+                            return response;
+                          } catch (e) {
+                            if (!continueOnError) {
+                              throw e;
+                            }
+                            return e;
+                          }
+                        })?.apply(null, [actionArgs]);
+                      })()
+                    : undefined;
+                  if (
+                    $steps["useIntegration"] != null &&
+                    typeof $steps["useIntegration"] === "object" &&
+                    typeof $steps["useIntegration"].then === "function"
+                  ) {
+                    $steps["useIntegration"] = await $steps["useIntegration"];
+                  }
+                }}
+                platform={"gatsby"}
+              >
+                {"klshaolin@gmail.com"}
+              </PlasmicLink__>
+            </div>
+          </div>
+        </div>
+      </div>
+    </RichLayout>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
-  svg: ["svg"]
+  root: ["root", "footer", "columns", "img"],
+  footer: ["footer", "columns", "img"],
+  columns: ["columns", "img"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: typeof RichLayout;
-  svg: "svg";
+  footer: "div";
+  columns: "div";
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -264,7 +647,9 @@ export const PlasmicPageLayout = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    svg: makeNodeComponent("svg"),
+    footer: makeNodeComponent("footer"),
+    columns: makeNodeComponent("columns"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicPageLayout
     internalVariantProps: PlasmicPageLayout__VariantProps,

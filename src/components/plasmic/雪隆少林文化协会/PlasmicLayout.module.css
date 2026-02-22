@@ -1,0 +1,209 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+}
+.freeBox__t1RMe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  column-gap: 16px;
+  min-width: 0;
+  padding: 16px;
+}
+.freeBox__vPvNl {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1080px;
+  column-gap: 16px;
+  min-width: 0;
+}
+.img {
+  animation: none;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  flex-shrink: 0;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.freeBox__yh8A {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 20px;
+}
+.link__jll8O {
+  color: #000000d9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 640px) {
+  .link__jll8O {
+    display: none;
+  }
+}
+.link__kRshv {
+  color: #000000d9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 640px) {
+  .link__kRshv {
+    display: none;
+  }
+}
+.dropdown:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  display: none;
+}
+@media (max-width: 640px) {
+  .dropdown:global(.__wab_instance) {
+    display: flex;
+  }
+}
+.menuItem__qPvYu:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__eqspB {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.menuItem__rurFo:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__wXzH1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.button:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+}
+.text__u1M2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.link__hTdSf {
+  color: #000000d9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 640px) {
+  .link__hTdSf {
+    display: none;
+  }
+}
+.link__eHMjx {
+  color: #000000d9;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 640px) {
+  .link__eHMjx {
+    display: none;
+  }
+}
+.button2:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  align-self: flex-start;
+  width: 100px;
+  flex-shrink: 0;
+}
+@media (max-width: 640px) {
+  .button2:global(.__wab_instance):global(.__wab_instance) {
+    display: none;
+  }
+}
+.text__yCjrR {
+  white-space: pre;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #eff6ff;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__xsYn9 {
+  position: relative;
+  height: 1em;
+}
+.svg___2Rkz1 {
+  position: relative;
+  height: 1em;
+}
