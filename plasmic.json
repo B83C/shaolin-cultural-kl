@@ -746,6 +746,41 @@
           "id": "qLP1BpoiJnlb",
           "name": "IconShaolinSvgIcon",
           "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__IconShaolinSvg.tsx"
+        },
+        {
+          "id": "K6DLHaSMMoqj",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "mnp9gi7l8J3y",
+          "name": "Icon21Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon21.tsx"
+        },
+        {
+          "id": "hDyPSK5AHgyI",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "hI5Gsc6O2eNT",
+          "name": "Icon18Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon18.tsx"
+        },
+        {
+          "id": "X5oHbAzhF8E4",
+          "name": "Icon22Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon22.tsx"
+        },
+        {
+          "id": "Pod3LQ4oDyT0",
+          "name": "Icon23Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon23.tsx"
+        },
+        {
+          "id": "-dYnXEyjcb-d",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon14.tsx"
         }
       ],
       "images": [
@@ -963,6 +998,51 @@
           "id": "04UbqCJmzT00",
           "name": "icon_shaolin.svg 2",
           "filePath": "plasmic/雪隆少林文化协会/images/iconShaolinSvg2.svg"
+        },
+        {
+          "id": "jFKqPQlsRqvV",
+          "name": "image 4",
+          "filePath": "plasmic/雪隆少林文化协会/images/image4.png"
+        },
+        {
+          "id": "nuzrUiBqxMr1",
+          "name": "image 5",
+          "filePath": "plasmic/雪隆少林文化协会/images/image5.png"
+        },
+        {
+          "id": "NQqklGGuv-zp",
+          "name": "image 6",
+          "filePath": "plasmic/雪隆少林文化协会/images/image6.png"
+        },
+        {
+          "id": "T1mhyOtUq98G",
+          "name": "image 7",
+          "filePath": "plasmic/雪隆少林文化协会/images/image7.png"
+        },
+        {
+          "id": "SjuzZHBN0YKb",
+          "name": "image 8",
+          "filePath": "plasmic/雪隆少林文化协会/images/image8.png"
+        },
+        {
+          "id": "WuJyUNs2dA-f",
+          "name": "image 9",
+          "filePath": "plasmic/雪隆少林文化协会/images/image9.png"
+        },
+        {
+          "id": "7mcMGBEmKoTR",
+          "name": "image 10",
+          "filePath": "plasmic/雪隆少林文化协会/images/image10.png"
+        },
+        {
+          "id": "hXU3ovENzpz5",
+          "name": "image 11",
+          "filePath": "plasmic/雪隆少林文化协会/images/image11.png"
+        },
+        {
+          "id": "Uuum2LRM8xcW",
+          "name": "image 12",
+          "filePath": "plasmic/雪隆少林文化协会/images/image12.png"
         }
       ],
       "indirect": false,

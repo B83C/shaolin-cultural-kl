@@ -63,6 +63,8 @@ import {
 
 import PageLayout from "../../PageLayout"; // plasmic-import: v5rlei5vjymQ/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
+import Button from "../../Button"; // plasmic-import: 3Vko89ihbPRA/component
+import Button2 from "../../Button2"; // plasmic-import: ZVEi9idvlzT1/component
 import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { _useGlobalVariants } from "../blank_project/plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { _useStyleTokens } from "../blank_project/PlasmicStyleTokensProvider"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/styleTokensProvider
@@ -71,6 +73,15 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 
 import * as projectcss from "../blank_project/plasmic.module.css"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectcss
 import * as sty from "./Plasmic首页.module.css"; // plasmic-import: _VyosKy2-Hc-/css
+
+import CircleIcon from "../blank_project/icons/PlasmicIcon__Circle"; // plasmic-import: gZuwXhxC2QAl/icon
+import ChevronDownIcon from "../blank_project/icons/PlasmicIcon__ChevronDown"; // plasmic-import: wjngPrVRJ2Ty/icon
+import EyeIcon from "../library_tabler_3_2_icons/icons/PlasmicIcon__Eye"; // plasmic-import: a8G7UBLzxa_z/icon
+import PhoneIcon from "../library_tabler_3_2_icons/icons/PlasmicIcon__Phone"; // plasmic-import: EOOfRsOwbYR2/icon
+import image4JFKqPQlsRqvV from "./images/image4.png"; // plasmic-import: jFKqPQlsRqvV/picture
+import image5NuzrUiBqxMr1 from "./images/image5.png"; // plasmic-import: nuzrUiBqxMr1/picture
+import image9WuJyUNs2DAF from "./images/image9.png"; // plasmic-import: WuJyUNs2dA-f/picture
+import image6NQqklGGuvZp from "./images/image6.png"; // plasmic-import: NQqklGGuv-zp/picture
 
 const emptyProxy: any = new Proxy(() => "", {
   get(_, prop) {
@@ -110,8 +121,9 @@ export const Plasmic首页__ArgProps = new Array<ArgPropType>();
 export type Plasmic首页__OverridesType = {
   root?: Flex__<"div">;
   页面格式?: Flex__<typeof PageLayout>;
-  首页?: Flex__<"div">;
+  标题?: Flex__<"div">;
   htmlVideo?: Flex__<typeof Video>;
+  雪隆少林文化协会?: Flex__<"div">;
   会所地址?: Flex__<"div">;
   embedHtml?: Flex__<typeof Embed>;
 };
@@ -154,6 +166,8 @@ function Plasmic首页__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = _useGlobalVariants();
+
   const styleTokensClassNames = _useStyleTokens();
 
   return (
@@ -187,9 +201,9 @@ function Plasmic首页__RenderFunc(props: {
               "\u5185\u5bb9": (
                 <React.Fragment>
                   <div
-                    data-plasmic-name={"\u9996\u9875"}
-                    data-plasmic-override={overrides.首页}
-                    className={classNames(projectcss.all, sty.首页)}
+                    data-plasmic-name={"\u6807\u9898"}
+                    data-plasmic-override={overrides.标题}
+                    className={classNames(projectcss.all, sty.标题)}
                   >
                     <Video
                       data-plasmic-name={"htmlVideo"}
@@ -198,15 +212,482 @@ function Plasmic首页__RenderFunc(props: {
                       className={classNames("__wab_instance", sty.htmlVideo)}
                       controls={false}
                       loop={true}
-                      muted={true}
                       playsInline={true}
                       ref={ref => {
                         $refs["htmlVideo"] = ref;
                       }}
                       src={
-                        "https://pub-7054b7b403a34f7cbd719e95fda764ac.r2.dev/test_1.webm"
+                        "https://pub-7054b7b403a34f7cbd719e95fda764ac.r2.dev/AQMNS20S3GXqwCEN8vBmwyWCXdw2CpkVlV_if6FSJzWtBuk5NA8rYsa-NDXv2nBkPgrrjuPevTPDxOTq9Tqm2JkR-gxioitoPcubygEjVKEr4Q.mp4"
                       }
                     />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__msCLl)}
+                    >
+                      <div
+                        data-plasmic-name={
+                          "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"
+                        }
+                        data-plasmic-override={overrides.雪隆少林文化协会}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.雪隆少林文化协会
+                        )}
+                      >
+                        {"\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___4NxlG
+                        )}
+                      >
+                        {
+                          "\u7985\u6b66\u5408\u4e00 \u00b7 \u8eab\u5fc3\u5171\u4fee \u00b7 \u670d\u52a1\u793e\u7fa4"
+                        }
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qyYs
+                        )}
+                      >
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__fd1Ab
+                          )}
+                          color={"neutral"}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__pnKq7
+                              )}
+                            >
+                              {"\u63a2\u7d22\u8bfe\u7a0b"}
+                            </div>
+                          }
+                          type={"soft"}
+                        />
+
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__og8VI
+                          )}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__mkgZc
+                              )}
+                            >
+                              {"\u6210\u4e3a\u4f1a\u5458"}
+                            </div>
+                          }
+                          type={"soft"}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__sd0Wq)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___3Dm4B
+                      )}
+                    >
+                      {hasVariant(globalVariants, "screen", "mobile")
+                        ? "\u4ee5\u6b66\u4fee\u7985\uff0c\n\u4ee5\u7985\u5bfc\u6b66"
+                        : "\u4ee5\u6b66\u4fee\u7985\uff0c\u4ee5\u7985\u5bfc\u6b66"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__f4ShQ
+                      )}
+                    >
+                      {
+                        "\u6211\u4eec\u662f\u9a6c\u6765\u897f\u4e9a\u96ea\u5170\u83aa\u53ca\u5409\u9686\u5761\u5730\u533a\u4e00\u4e2a\u975e\u8425\u5229\u7684\u6587\u5316\u7ec4\u7ec7\u3002\u6211\u4eec\u81f4\u529b\u4e8e\u5c06\u53e4\u8001\u7684\u5c11\u6797\u667a\u6167\u2014\u2014\u7985\u3001\u6b66\u3001\u533b\u3001\u827a\u2014\u2014\u878d\u5165\u73b0\u4ee3\u751f\u6d3b\uff0c\u5e2e\u52a9\u4eba\u4eec\u5efa\u7acb\u8eab\u5fc3\u7684\u548c\u8c10\u4e0e\u529b\u91cf\uff0c\u5171\u540c\u6784\u5efa\u4e00\u4e2a\u66f4\u5177\u5173\u6000\u7684\u793e\u533a\u3002"
+                      }
+                    </div>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__eIjZq
+                      )}
+                      flatSide={[]}
+                      label={
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lwDdO
+                          )}
+                        >
+                          {"\u4e86\u89e3\u66f4\u591a"}
+                        </div>
+                      }
+                      linkTo={`/关于我们`}
+                      size={"large"}
+                      type={"bordered"}
+                    />
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jwTge)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___7HH9
+                      )}
+                    >
+                      {"\u56db\u5927\u57fa\u77f3"}
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.columns__mbIL)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__fjyem
+                        )}
+                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__aRnQk
+                          )}
+                        >
+                          {"\u7985"}
+                        </h1>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___6Wy5K
+                          )}
+                        >
+                          {
+                            "\u51c0\u5316\u5fc3\u7075\uff0c\u57f9\u517b\u5185\u5728\u7684\u89c9\u77e5\u4e0e\u5b9a\u529b\uff0c\u4e8e\u52a8\u9759\u4e4b\u4e2d\u89c1\u667a\u6167\u3002"
+                          }
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__eAbL0
+                        )}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__qx5Ty)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={{
+                            src: image4JFKqPQlsRqvV,
+                            fullWidth: 1024,
+                            fullHeight: 1024,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__nzxAw
+                        )}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__q7Ssq)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={{
+                            src: image5NuzrUiBqxMr1,
+                            fullWidth: 1024,
+                            fullHeight: 1024,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column___0KMdY
+                        )}
+                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__cllMg
+                          )}
+                        >
+                          {"\u6b66"}
+                        </h1>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__maNf3
+                          )}
+                        >
+                          {
+                            "\u953b\u70bc\u4f53\u9b44\uff0c\u78e8\u7ec3\u575a\u97e7\u4e0d\u62d4\u7684\u610f\u5fd7\uff0c\u5728\u6c57\u6c34\u4e2d\u91cd\u5851\u81ea\u6211\u3002"
+                          }
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___55FQx)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.columns___2N1UQ
+                      )}
+                    >
+                      <div
+                        className={classNames(projectcss.all, sty.column__lCrn)}
+                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1___15BAo
+                          )}
+                        >
+                          {"\u533b"}
+                        </h1>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__tm6Ic
+                          )}
+                        >
+                          {
+                            "\u8c03\u548c\u6c14\u8840\uff0c\u901a\u8fc7\u547c\u5438\u6cd5\u3001\u5bfc\u5f15\u672f\u7b49\u4f20\u7edf\u517b\u751f\u65b9\u5f0f\uff0c\u5b88\u62a4\u8eab\u5fc3\u5065\u5eb7\u3002"
+                          }
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(projectcss.all, sty.column__aEH9)}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___3Kin)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={{
+                            src: image9WuJyUNs2DAF,
+                            fullWidth: 1536,
+                            fullHeight: 1024,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__e5U24
+                        )}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img___8Emgm)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={{
+                            src: image6NQqklGGuvZp,
+                            fullWidth: 1536,
+                            fullHeight: 1024,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__dBzK7
+                        )}
+                      >
+                        <h1
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h1,
+                            projectcss.__wab_text,
+                            sty.h1__fr0Lx
+                          )}
+                        >
+                          {"\u827a"}
+                        </h1>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__pqBdA
+                          )}
+                        >
+                          {
+                            "\u6db5\u517b\u6027\u60c5\uff0c\u5728\u4f20\u7edf\u6587\u5316\u7684\u718f\u9676\u4e2d\uff0c\u63d0\u5347\u5ba1\u7f8e\u4e0e\u751f\u6d3b\u54c1\u8d28\u3002"
+                          }
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yIKzc)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___0Jtod
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___86Vpp
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "\u5b88\u62a4\u4f20\u7edf\uff0c\n\u5f00\u521b\u672a\u6765"
+                          : "\u5b88\u62a4\u4f20\u7edf\uff0c\u5f00\u521b\u672a\u6765"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__fUbuB
+                        )}
+                      >
+                        {
+                          "\u6211\u4eec\u76f8\u4fe1\uff0c\u771f\u6b63\u7684\u529b\u91cf\u6e90\u4e8e\u8eab\u5fc3\u7684\u548c\u8c10\u4e0e\u54c1\u683c\u7684\u5b8c\u5584\u3002\u52a0\u5165\u6211\u4eec\uff0c\u4e00\u8d77\u63a2\u7d22\u8fd9\u6761\u901a\u5f80\u5065\u5eb7\u3001\u5e73\u9759\u4e0e\u667a\u6167\u7684\u5c11\u6797\u4e4b\u8def\u3002"
+                        }
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fle04
+                        )}
+                      >
+                        <Button2
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__niZ2S
+                          )}
+                          color={"black"}
+                          end={
+                            <EyeIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__tre8X
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          iconEnd={true}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___1Qed2
+                              )}
+                            >
+                              {"\u67e5\u770b\u8bfe\u7a0b\u8be6\u60c5"}
+                            </div>
+                          }
+                          size={"large"}
+                          start={
+                            <CircleIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__ynHd7
+                              )}
+                              role={"img"}
+                            />
+                          }
+                        />
+
+                        <Button2
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button2__mtdq4
+                          )}
+                          color={"black"}
+                          end={
+                            <PhoneIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__xCyBt
+                              )}
+                              role={"img"}
+                            />
+                          }
+                          iconEnd={true}
+                          label={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__vtlhM
+                              )}
+                            >
+                              {"\u8054\u7cfb\u6211\u4eec"}
+                            </div>
+                          }
+                          size={"large"}
+                          start={
+                            <CircleIcon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__vskQe
+                              )}
+                              role={"img"}
+                            />
+                          }
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div
                     data-plasmic-name={"\u4f1a\u6240\u5730\u5740"}
@@ -233,7 +714,7 @@ function Plasmic首页__RenderFunc(props: {
                         )}
                       >
                         {
-                          "3A-08, Jalan Desa Aman 1, Taman Desa Aman, 56100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
+                          "3A-08, Jalan Desa Aman 1, Taman Desa Aman, \n56100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur"
                         }
                       </div>
                     </div>
@@ -264,20 +745,27 @@ const PlasmicDescendants = {
   root: [
     "root",
     "\u9875\u9762\u683c\u5f0f",
-    "\u9996\u9875",
+    "\u6807\u9898",
     "htmlVideo",
+    "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a",
     "\u4f1a\u6240\u5730\u5740",
     "embedHtml"
   ],
   页面格式: [
     "\u9875\u9762\u683c\u5f0f",
-    "\u9996\u9875",
+    "\u6807\u9898",
     "htmlVideo",
+    "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a",
     "\u4f1a\u6240\u5730\u5740",
     "embedHtml"
   ],
-  首页: ["\u9996\u9875", "htmlVideo"],
+  标题: [
+    "\u6807\u9898",
+    "htmlVideo",
+    "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"
+  ],
   htmlVideo: ["htmlVideo"],
+  雪隆少林文化协会: ["\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"],
   会所地址: ["\u4f1a\u6240\u5730\u5740", "embedHtml"],
   embedHtml: ["embedHtml"]
 } as const;
@@ -287,8 +775,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   页面格式: typeof PageLayout;
-  首页: "div";
+  标题: "div";
   htmlVideo: typeof Video;
+  雪隆少林文化协会: "div";
   会所地址: "div";
   embedHtml: typeof Embed;
 };
@@ -356,8 +845,11 @@ export const Plasmic首页 = Object.assign(
   {
     // Helper components rendering sub-elements
     页面格式: makeNodeComponent("\u9875\u9762\u683c\u5f0f"),
-    首页: makeNodeComponent("\u9996\u9875"),
+    标题: makeNodeComponent("\u6807\u9898"),
     htmlVideo: makeNodeComponent("htmlVideo"),
+    雪隆少林文化协会: makeNodeComponent(
+      "\u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a"
+    ),
     会所地址: makeNodeComponent("\u4f1a\u6240\u5730\u5740"),
     embedHtml: makeNodeComponent("embedHtml"),
 

@@ -21,6 +21,7 @@
   flex-shrink: 1;
   width: var(--token-xpA-7-UWgDGz);
   height: var(--token-xpA-7-UWgDGz);
+  color: var(--token-ui4_dVRIm3IX);
 }
 .svg__glCi4 {
   object-fit: cover;
@@ -103,11 +104,12 @@
 .img {
   animation: none;
   object-fit: cover;
-  width: 40px;
-  height: 40px;
+  width: 150px;
   position: relative;
   opacity: 0.5;
-  flex-shrink: 0;
+  align-self: center;
+  aspect-ratio: 1;
+  margin-bottom: 0px;
 }
 .img > picture > img {
   object-fit: cover;
@@ -313,6 +315,26 @@
   user-select: text;
   text-decoration-line: none;
   text-overflow: clip;
+}
+.freeBox__nCGom {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  column-gap: 2.5%;
+  padding: 8px;
+}
+.svg___8EjVe {
+  object-fit: cover;
+  color: #000000;
+  width: var(--token-ekJK2BNXfyOR);
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  height: 1em;
 }
 .link__xh2Ao {
   color: #007aff;

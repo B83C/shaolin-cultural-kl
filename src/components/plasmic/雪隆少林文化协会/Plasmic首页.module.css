@@ -28,82 +28,124 @@
   opacity: 1;
   order: 0;
 }
-.首页 {
-  display: flex;
+.标题 {
+  display: block;
   position: relative;
   width: 100%;
-  height: auto;
   max-width: 100%;
   top: auto;
   left: auto;
-  flex-direction: column;
-  z-index: 1;
+  background: none;
+  height: auto;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
 }
 .htmlVideo:global(.__wab_instance) {
   width: 100%;
   height: 100%;
-  max-width: none;
+  max-width: 100%;
   object-fit: cover;
-  box-shadow: 0px 4px 16px 0px #00000087;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   display: block;
+  background: none;
+}
+.freeBox__msCLl {
+  display: flex;
+  position: sticky;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  flex-direction: column;
+  background: var(--token-WSRu779D3RKC);
+  padding: 251px 8px;
+}
+.雪隆少林文化协会 {
   position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-family: "Zhi Mang Xing";
+  color: var(--token-jJbkqpwhxooT);
+  text-align: center;
+  font-weight: 700;
+  left: auto;
+  top: auto;
+  font-size: 5em;
+  min-width: 0;
+}
+@media (max-width: 640px) {
+  .雪隆少林文化协会 {
+    font-size: 2.5em;
+  }
+}
+.text___4NxlG {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  color: var(--token-jJbkqpwhxooT);
+  left: auto;
+  top: auto;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+  min-width: 0;
+}
+.freeBox__qyYs {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  column-gap: var(--token-OJSN3W0Myvht);
   left: auto;
   top: auto;
   min-width: 0;
-  min-height: 0;
-  padding: 0px;
-}
-.会所地址 {
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: auto;
-  align-items: stretch;
-  flex-shrink: 1;
-  max-width: 100%;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  column-gap: 5%;
-  min-width: 0;
-  --plsmc-rc-col-gap: 5%;
   padding: 8px;
 }
-.会所地址 > :nth-child(2n + 1) {
-  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
-}
-.会所地址 > :nth-child(2n + 2) {
-  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
-}
-.column__qOdB {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
+.button__fd1Ab:global(.__wab_instance):global(.__wab_instance) {
   max-width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  min-width: 0;
-  padding: 8px;
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
 }
-.text__pgLcd {
+.svg__ik8Rw {
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  font-size: 50px;
-  min-width: 0;
+  height: 1em;
 }
-.text__gEo9O {
+.text__pnKq7 {
+  white-space: pre;
+  height: auto;
+}
+.svg__ooAcQ {
   position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
+  height: 1em;
 }
-.column__xjwmk {
+.button__og8VI:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__dr59M {
+  position: relative;
+  height: 1em;
+}
+.text__mkgZc {
+  white-space: pre;
+  height: auto;
+}
+.svg__h0Fpq {
+  position: relative;
+  height: 1em;
+}
+.freeBox__sd0Wq {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -113,9 +155,694 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
+  padding: 140px 8px;
+}
+.text___3Dm4B {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  font-family: "Zhi Mang Xing";
+  font-size: 7em;
+}
+@media (max-width: 640px) {
+  .text___3Dm4B {
+    font-size: 5em;
+  }
+}
+.text__f4ShQ {
+  position: relative;
+  width: 50%;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 41px;
+  margin-top: 41px;
+  line-height: 2;
+  font-weight: 500;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+}
+@media (max-width: 640px) {
+  .text__f4ShQ {
+    width: 75%;
+    text-align: justify;
+  }
+}
+.button__eIjZq:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.svg__adA {
+  position: relative;
+  height: 1em;
+}
+.text__lwDdO {
+  white-space: pre;
+}
+.svg__hKxeX {
+  position: relative;
+  height: 1em;
+}
+.freeBox__jwTge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  background: #ffffff;
+  box-shadow: none;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 48px 8px 0px;
+}
+.text___7HH9 {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  font-size: 3em;
+  display: none;
+}
+.columns__mbIL {
+  display: flex;
+  position: relative;
+  width: 1140px;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  --plsmc-rc-col-gap: 0px;
   padding: 8px;
+}
+.columns__mbIL > :nth-child(2n + 1) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+.columns__mbIL > :nth-child(2n + 2) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+@media (max-width: 640px) {
+  .columns__mbIL {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+    --plsmc-rc-col-gap: 0px;
+  }
+}
+@media (max-width: 640px) {
+  .columns__mbIL > :nth-child(1n + 1) {
+    width: calc((100% - 0 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
+}
+.column__fjyem {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px 42px;
+}
+.h1__aRnQk {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Zhi Mang Xing";
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.text___6Wy5K {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 32px;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+  font-weight: 400;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.column__eAbL0 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__qx5Ty {
+  object-fit: cover;
+  max-width: 100%;
+  transition-property: all;
+  transition-duration: 1s;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+.img__qx5Ty > picture > img {
+  object-fit: cover;
+}
+.column__nzxAw {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__q7Ssq {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__q7Ssq > picture > img {
+  object-fit: cover;
+}
+.column___0KMdY {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px 42px;
+}
+.h1__cllMg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Zhi Mang Xing";
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.text__maNf3 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 32px;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+  font-weight: 400;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  padding-top: 0px;
+  min-width: 0;
+}
+.freeBox___55FQx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 838px;
+  max-width: 100%;
+  position: relative;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  padding: 0px 8px 48px;
+}
+.columns___2N1UQ {
+  display: flex;
+  position: relative;
+  width: 1140px;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  --plsmc-rc-col-gap: 0px;
+  padding: 8px;
+}
+.columns___2N1UQ > :nth-child(2n + 1) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+.columns___2N1UQ > :nth-child(2n + 2) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
+}
+@media (max-width: 640px) {
+  .columns___2N1UQ {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 0;
+    --plsmc-rc-col-gap: 0px;
+  }
+}
+@media (max-width: 640px) {
+  .columns___2N1UQ > :nth-child(1n + 1) {
+    width: calc((100% - 0 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
+}
+.column__lCrn {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px 42px;
+}
+.h1___15BAo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Zhi Mang Xing";
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.text__tm6Ic {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 32px;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+  font-weight: 400;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.column__aEH9 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img___3Kin {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img___3Kin > picture > img {
+  object-fit: cover;
+}
+.column__e5U24 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img___8Emgm {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img___8Emgm > picture > img {
+  object-fit: cover;
+}
+.column__dBzK7 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px 42px;
+}
+.h1__fr0Lx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Zhi Mang Xing";
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  min-width: 0;
+}
+.text__pqBdA {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 32px;
+  font-family: "Ma Shan Zheng";
+  font-size: var(--token-eJaHiy-dZYIN);
+  font-weight: 400;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  padding-top: 0px;
+  min-width: 0;
+}
+.freeBox__yIKzc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+  width: 100%;
+  row-gap: 32px;
+  min-width: 0;
+  padding: 128px 16px;
+}
+@media (max-width: 640px) {
+  .freeBox__yIKzc {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+.freeBox___0Jtod {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  row-gap: 32px;
+}
+.text___86Vpp {
+  height: auto;
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+.text__fUbuB {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000d9;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+}
+@media (max-width: 640px) {
+  .text__fUbuB {
+    text-align: center;
+  }
+}
+.freeBox__fle04 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  column-gap: 2%;
+  min-width: 0;
+  padding: 8px;
+}
+@media (max-width: 640px) {
+  .freeBox__fle04 {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+}
+.button2__niZ2S:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+}
+.text___1Qed2 {
+  white-space: pre;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #eff6ff;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__tre8X {
+  position: relative;
+  color: #ffffff;
+  height: 1em;
+}
+.svg__ynHd7 {
+  position: relative;
+  height: 1em;
+}
+.button2__mtdq4:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+}
+.text__vtlhM {
+  white-space: pre;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #eff6ff;
+  text-align: left;
+  text-transform: none;
+  line-height: 1.5;
+  letter-spacing: normal;
+  user-select: text;
+  text-decoration-line: none !important;
+  text-overflow: clip !important;
+}
+.svg__xCyBt {
+  position: relative;
+  color: #ffffff;
+  height: 1em;
+}
+.svg__vskQe {
+  position: relative;
+  height: 1em;
+}
+.会所地址 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2.5%;
+  position: relative;
+  left: auto;
+  top: auto;
+  z-index: 1;
+  min-width: 0;
+  --plsmc-rc-col-gap: 2.5%;
+  padding: 8px;
+  margin: var(--token-Kzvu_5ZcCKzb);
+}
+.会所地址 > :nth-child(2n + 1) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 5 / 12);
+}
+.会所地址 > :nth-child(2n + 2) {
+  width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 7 / 12);
+}
+@media (max-width: 640px) {
+  .会所地址 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    padding-right: 8px;
+    width: auto;
+    --plsmc-rc-col-gap: 2.5%;
+  }
+}
+@media (max-width: 640px) {
+  .会所地址 > :nth-child(1n + 1) {
+    width: calc((100% - 0 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
+}
+.column__qOdB {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.text__pgLcd {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  font-size: 50px;
+  text-align: right;
+  font-weight: 700;
+  font-family: "Noto Serif SC", serif;
+  min-width: 0;
+}
+@media (max-width: 640px) {
+  .text__pgLcd {
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+  }
+}
+.text__gEo9O {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  text-align: right;
+  align-self: flex-end;
+  font-size: 1em;
+}
+@media (max-width: 640px) {
+  .text__gEo9O {
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    min-width: 0;
+  }
+}
+.column__xjwmk {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 0px;
 }
 .embedHtml:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-self: flex-start;
+  box-shadow: 0px 10px 16px 3px #05050557;
+  border-radius: 10%;
 }

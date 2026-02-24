@@ -176,6 +176,72 @@ function Plasmic课程项目__RenderFunc(props: {
           <PageLayout
             data-plasmic-name={"pageLayout"}
             data-plasmic-override={overrides.pageLayout}
+            {...{
+              "\u5185\u5bb9": (
+                <React.Fragment>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___2BWit)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__lrJjz
+                      )}
+                    >
+                      {
+                        "\u6211\u4eec\u4e3a\u4e0d\u540c\u5e74\u9f84\u5c42\uff08\u513f\u7ae5\u3001\u9752\u5c11\u5e74\u3001\u6210\u4eba\uff09\u8bbe\u8ba1\u4e86\u5206\u7ea7\u5236\u7684\u6b66\u672f\u8bfe\u7a0b\u3002\u4ece\u57fa\u7840\u7684\u62f3\u6cd5\u3001\u817f\u6cd5\uff0c\u5230\u590d\u6742\u7684\u5668\u68b0\u3001\u5bf9\u7ec3\uff0c\u5faa\u5e8f\u6e10\u8fdb\u5730\u57f9\u517b\u5b66\u751f\u7684\u7eaa\u5f8b\u6027\u3001\u534f\u8c03\u6027\u548c\u575a\u97e7\u7684\u54c1\u683c\u3002\u4e0d\u4ec5\u662f\u5b66\u4e60\u62db\u5f0f\uff0c\u66f4\u662f\u5b66\u4e60\u5c11\u6797\u6b66\u8005\u7cbe\u795e\u3002"
+                      }
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__hl6Tf)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__pvHxS
+                      )}
+                    >
+                      {
+                        "\u5728\u55a7\u56a3\u7684\u90fd\u5e02\u4e2d\uff0c\u4e3a\u60a8\u5f00\u8f9f\u4e00\u7247\u5b81\u9759\u4e4b\u5730\u3002\u8bfe\u7a0b\u6559\u6388\u57fa\u7840\u7684\u7985\u5750\u65b9\u6cd5\u3001\u547c\u5438\u6280\u5de7\u548c\u884c\u7985\uff0c\u5e2e\u52a9\u60a8\u51cf\u8f7b\u538b\u529b\u3001\u63d0\u5347\u4e13\u6ce8\u529b\u3001\u83b7\u5f97\u60c5\u7eea\u5e73\u8861\uff0c\u8ba9\u5fc3\u7075\u56de\u5f52\u5e73\u9759\u3002"
+                      }
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___96Aej)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___0XE8Q
+                      )}
+                    >
+                      {
+                        " \u7ed3\u5408\u5c11\u6797\u4f20\u7edf\u533b\u5b66\u667a\u6167\uff0c\u5f00\u8bbe\u516b\u6bb5\u9526\u3001\u6613\u7b4b\u7ecf\u3001\u547c\u5438\u5410\u7eb3\u7b49\u517b\u751f\u529f\u6cd5\u8bfe\u7a0b\u3002\u8fd9\u4e9b\u7ec3\u4e60\u6e29\u548c\u800c\u6df1\u5165\uff0c\u80fd\u6709\u6548\u6539\u5584\u8eab\u4f53\u4e9a\u5065\u5eb7\u72b6\u6001\uff0c\u758f\u901a\u6c14\u8840\uff0c\u56fa\u672c\u57f9\u5143\u3002"
+                      }
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qkh7)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__nznDv
+                      )}
+                    >
+                      {
+                        "\u5b9a\u671f\u4e3e\u529e\u5c11\u6797\u6587\u5316\u8bb2\u5ea7\u3001\u7985\u8336\u4f1a\u3001\u4e66\u6cd5\u5de5\u4f5c\u574a\u3001\u8282\u65e5\u5e86\u5178\u53ca\u77ed\u671f\u7985\u6b66\u590f\u4ee4\u8425/\u51ac\u4ee4\u8425\u3002\u6211\u4eec\u6b22\u8fce\u6240\u6709\u5bf9\u4f20\u7edf\u6587\u5316\u611f\u5174\u8da3\u7684\u670b\u53cb\uff0c\u5171\u540c\u4f53\u9a8c\u6587\u5316\u4ea4\u6d41\u7684\u4e50\u8da3\u3002"
+                      }
+                    </div>
+                  </div>
+                </React.Fragment>
+              )
+            }}
           />
         </div>
       </div>

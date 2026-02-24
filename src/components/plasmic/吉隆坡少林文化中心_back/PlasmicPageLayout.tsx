@@ -61,13 +61,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import { usePlasmicDataSourceContext } from "@plasmicapp/data-sources-context";
-import {
-  executePlasmicDataOp,
-  usePlasmicDataOp,
-  usePlasmicInvalidate
-} from "@plasmicapp/react-web/lib/data-sources";
-
 import { RichLayout } from "@plasmicpkgs/plasmic-rich-components/skinny/rich-layout";
 import { _useGlobalVariants } from "../blank_project/plasmic"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectModule
 import { _useStyleTokens } from "../blank_project/PlasmicStyleTokensProvider"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/styleTokensProvider
@@ -81,6 +74,7 @@ import IconShaolinSvgIcon from "../\u96EA\u9686\u5C11\u6797\u6587\u5316\u534F\u4
 import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: p3g-H6pQ3hJf/icon
 import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: 8PF6-UHTxZ75/icon
 import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: 5-WMc0CFCtNY/icon
+import MailboxIcon from "../library_tabler_3_2_icons/icons/PlasmicIcon__Mailbox"; // plasmic-import: foxZdj9FSYOH/icon
 import iconShaolinSvg204UbqCJmzT00 from "../\u96EA\u9686\u5C11\u6797\u6587\u5316\u534F\u4F1A/images/iconShaolinSvg2.svg"; // plasmic-import: 04UbqCJmzT00/picture
 
 createPlasmicElementProxy;
@@ -139,9 +133,6 @@ function PlasmicPageLayout__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = _useGlobalVariants();
-
-  const dataSourcesCtx = usePlasmicDataSourceContext();
-  const plasmicInvalidate = usePlasmicInvalidate();
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -270,12 +261,12 @@ function PlasmicPageLayout__RenderFunc(props: {
                 data-plasmic-override={overrides.img}
                 alt={""}
                 className={classNames(sty.img)}
-                displayHeight={"40px"}
+                displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"40px"}
+                displayWidth={"150px"}
                 src={{
                   src: iconShaolinSvg204UbqCJmzT00,
                   fullWidth: 1706.667,
@@ -514,53 +505,25 @@ function PlasmicPageLayout__RenderFunc(props: {
               >
                 {"\u8054\u7cfb\u6211\u4eec"}
               </div>
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__xh2Ao
-                )}
-                component={Link}
-                href={"https://www.plasmic.app/"}
-                onClick={async event => {
-                  const $steps = {};
+              <div className={classNames(projectcss.all, sty.freeBox__nCGom)}>
+                <MailboxIcon
+                  className={classNames(projectcss.all, sty.svg___8EjVe)}
+                  role={"img"}
+                />
 
-                  $steps["useIntegration"] = true
-                    ? (() => {
-                        const actionArgs = {};
-                        return (async ({ dataOp, continueOnError }) => {
-                          try {
-                            const response = await executePlasmicDataOp(
-                              dataOp,
-                              {
-                                userAuthToken: dataSourcesCtx?.userAuthToken,
-                                user: dataSourcesCtx?.user
-                              }
-                            );
-                            await plasmicInvalidate(dataOp.invalidatedKeys);
-                            return response;
-                          } catch (e) {
-                            if (!continueOnError) {
-                              throw e;
-                            }
-                            return e;
-                          }
-                        })?.apply(null, [actionArgs]);
-                      })()
-                    : undefined;
-                  if (
-                    $steps["useIntegration"] != null &&
-                    typeof $steps["useIntegration"] === "object" &&
-                    typeof $steps["useIntegration"].then === "function"
-                  ) {
-                    $steps["useIntegration"] = await $steps["useIntegration"];
-                  }
-                }}
-                platform={"gatsby"}
-              >
-                {"klshaolin@gmail.com"}
-              </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__xh2Ao
+                  )}
+                  component={Link}
+                  platform={"gatsby"}
+                >
+                  {"klshaolin@gmail.com"}
+                </PlasmicLink__>
+              </div>
             </div>
           </div>
         </div>

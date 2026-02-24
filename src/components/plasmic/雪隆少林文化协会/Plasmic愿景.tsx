@@ -70,6 +70,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import * as projectcss from "../blank_project/plasmic.module.css"; // plasmic-import: sXCRtjYKZPsLyt67ZBQv6B/projectcss
 import * as sty from "./Plasmic愿景.module.css"; // plasmic-import: dlaJwa8GeIHa/css
 
+import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: hDyPSK5AHgyI/icon
+
 const emptyProxy: any = new Proxy(() => "", {
   get(_, prop) {
     return prop === Symbol.toPrimitive ? () => "" : emptyProxy;
@@ -108,6 +110,9 @@ export const Plasmic愿景__ArgProps = new Array<ArgPropType>();
 export type Plasmic愿景__OverridesType = {
   root?: Flex__<"div">;
   pageLayout?: Flex__<typeof PageLayout>;
+  foreground?: Flex__<"div">;
+  foreground2?: Flex__<"div">;
+  columns?: Flex__<"div">;
 };
 
 export interface Default愿景Props {
@@ -176,6 +181,229 @@ function Plasmic愿景__RenderFunc(props: {
           <PageLayout
             data-plasmic-name={"pageLayout"}
             data-plasmic-override={overrides.pageLayout}
+            {...{
+              "\u5185\u5bb9": (
+                <div className={classNames(projectcss.all, sty.freeBox__pakw5)}>
+                  <div
+                    data-plasmic-name={"foreground"}
+                    data-plasmic-override={overrides.foreground}
+                    className={classNames(projectcss.all, sty.foreground)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__gpSbF
+                      )}
+                    >
+                      {"\u6211\u4eec\u7684\u613f\u666f"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__daF
+                      )}
+                    >
+                      {
+                        "\u5728\u591a\u5143\u6587\u5316\u7684\u571f\u58e4\u4e0a\uff0c\u64ad\u6492\u5c11\u6797\u667a\u6167\u7684\u79cd\u5b50"
+                      }
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___0VC2C
+                      )}
+                    >
+                      {
+                        "\u6211\u4eec\u7684\u957f\u8fdc\u76ee\u6807\uff0c\u662f\u5728\u9a6c\u6765\u897f\u4e9a\u5efa\u7acb\u4e00\u4e2a\u5177\u6709\u516c\u4fe1\u529b\u548c\u5f71\u54cd\u529b\u7684\u5c11\u6797\u6587\u5316\u5e73\u53f0\u3002"
+                      }
+                    </div>
+                  </div>
+                  <div
+                    data-plasmic-name={"foreground2"}
+                    data-plasmic-override={overrides.foreground2}
+                    className={classNames(projectcss.all, sty.foreground2)}
+                  >
+                    <div
+                      data-plasmic-name={"columns"}
+                      data-plasmic-override={overrides.columns}
+                      className={classNames(projectcss.all, sty.columns)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__obifa
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__u4Pa1
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__kdSgq
+                              )}
+                            >
+                              <Icon8Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__tpTi1
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__oa8I9
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__wZzL
+                              )}
+                            >
+                              {"\u5b88\u62a4\u4f20\u7edf"}
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__sePzB
+                              )}
+                            >
+                              {
+                                "\u539f\u6c41\u539f\u5473\u5730\u4f20\u627f\u5c11\u6797\u5bfa\u5343\u5e74\u7684\u6587\u5316\u7cbe\u9ad3"
+                              }
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(projectcss.all, sty.column__kl0K)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__afbbT
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___1HSlq
+                              )}
+                            >
+                              <Icon8Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__dwQ2I
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__t1C3W
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__pl20H
+                              )}
+                            >
+                              {"\u878d\u5408\u672c\u571f"}
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__wBt8I
+                              )}
+                            >
+                              {
+                                "\u4e0e\u9a6c\u6765\u897f\u4e9a\u591a\u5143\u79cd\u65cf\u3001\u591a\u5143\u6587\u5316\u7684\u793e\u4f1a\u548c\u8c10\u5171\u751f\uff0c\u521b\u65b0\u53d1\u5c55\u3002"
+                              }
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.column__pqL5Z
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__hmLtL
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__dem9O
+                              )}
+                            >
+                              <Icon8Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__ohs1
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__scMcd
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__knLl3
+                              )}
+                            >
+                              {"\u56de\u9988\u793e\u4f1a"}
+                            </div>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__kajFm
+                              )}
+                            >
+                              {
+                                "\u901a\u8fc7\u6301\u7eed\u7684\u52aa\u529b\u548c\u793e\u533a\u670d\u52a1\uff0c\u57f9\u517b\u51fa\u66f4\u591a\u62e5\u6709\u5f3a\u5065\u4f53\u9b44\u3001\u5e73\u548c\u5185\u5fc3\u4e0e\u9ad8\u5c1a\u54c1\u683c\u7684\u4e2a\u4f53\uff0c\u4e3a\u793e\u4f1a\u7684\u548c\u8c10\u4e0e\u8fdb\u6b65\u8d21\u732e\u529b\u91cf\u3002"
+                              }
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            }}
           />
         </div>
       </div>
@@ -184,8 +412,11 @@ function Plasmic愿景__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageLayout"],
-  pageLayout: ["pageLayout"]
+  root: ["root", "pageLayout", "foreground", "foreground2", "columns"],
+  pageLayout: ["pageLayout", "foreground", "foreground2", "columns"],
+  foreground: ["foreground"],
+  foreground2: ["foreground2", "columns"],
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -193,6 +424,9 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageLayout: typeof PageLayout;
+  foreground: "div";
+  foreground2: "div";
+  columns: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -258,6 +492,9 @@ export const Plasmic愿景 = Object.assign(
   {
     // Helper components rendering sub-elements
     pageLayout: makeNodeComponent("pageLayout"),
+    foreground: makeNodeComponent("foreground"),
+    foreground2: makeNodeComponent("foreground2"),
+    columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for Plasmic愿景
     internalVariantProps: Plasmic愿景__VariantProps,

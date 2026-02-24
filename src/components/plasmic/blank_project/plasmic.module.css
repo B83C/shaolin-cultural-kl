@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800&family=Zhi+Mang+Xing%3Aital%2Cwght%400%2C400&family=Ma+Shan+Zheng%3Aital%2Cwght%400%2C400&family=Noto+Serif+SC%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens {
   --token-RRRmBvRcTr0I: 100%;
@@ -138,6 +138,10 @@
 @keyframes unnamedAnimationRfI6B75Ic11S {
   0% {
     transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes unnamedAnimation2Z4DEirmhyCzt {
+  0% {
   }
 }
 
