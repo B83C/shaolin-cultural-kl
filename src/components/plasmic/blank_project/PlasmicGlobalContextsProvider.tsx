@@ -11,19 +11,25 @@ import { _useGlobalVariants } from "./plasmic"; // plasmic-import: sXCRtjYKZPsLy
 import { ParallaxProviderWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import { CmsCredentialsProvider } from "@plasmicpkgs/plasmic-cms";
 import { AntdConfigProvider } from "@plasmicpkgs/antd5/skinny/registerConfigProvider";
+import { SanityCredentialsProvider } from "@plasmicpkgs/plasmic-sanity-io";
+import { EmbedCss } from "@plasmicpkgs/plasmic-embed-css";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   parallaxProviderWrapperProps?: Partial<
     Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
   >;
-
   cmsCredentialsProviderProps?: Partial<
     Omit<React.ComponentProps<typeof CmsCredentialsProvider>, "children">
   >;
-
   antdConfigProviderProps?: Partial<
     Omit<React.ComponentProps<typeof AntdConfigProvider>, "children">
+  >;
+  sanityCredentialsProviderProps?: Partial<
+    Omit<React.ComponentProps<typeof SanityCredentialsProvider>, "children">
+  >;
+  embedCssProps?: Partial<
+    Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
 }
 
@@ -34,7 +40,9 @@ export default function GlobalContextsProvider(
     children,
     parallaxProviderWrapperProps,
     cmsCredentialsProviderProps,
-    antdConfigProviderProps
+    antdConfigProviderProps,
+    sanityCredentialsProviderProps,
+    embedCssProps
   } = props;
 
   return (
@@ -166,7 +174,50 @@ export default function GlobalContextsProvider(
               : false
           }
         >
-          {children}
+          <SanityCredentialsProvider
+            {...sanityCredentialsProviderProps}
+            apiVersion={
+              sanityCredentialsProviderProps &&
+              "apiVersion" in sanityCredentialsProviderProps
+                ? sanityCredentialsProviderProps.apiVersion!
+                : undefined
+            }
+            dataset={
+              sanityCredentialsProviderProps &&
+              "dataset" in sanityCredentialsProviderProps
+                ? sanityCredentialsProviderProps.dataset!
+                : "production"
+            }
+            projectId={
+              sanityCredentialsProviderProps &&
+              "projectId" in sanityCredentialsProviderProps
+                ? sanityCredentialsProviderProps.projectId!
+                : "b2gfz67v"
+            }
+            token={
+              sanityCredentialsProviderProps &&
+              "token" in sanityCredentialsProviderProps
+                ? sanityCredentialsProviderProps.token!
+                : undefined
+            }
+            useCdn={
+              sanityCredentialsProviderProps &&
+              "useCdn" in sanityCredentialsProviderProps
+                ? sanityCredentialsProviderProps.useCdn!
+                : undefined
+            }
+          >
+            <EmbedCss
+              {...embedCssProps}
+              css={
+                embedCssProps && "css" in embedCssProps
+                  ? embedCssProps.css!
+                  : "@font-face {\n  font-family: 'FZShaoLinGongFuTiS';\n  src: url('https://pub-7054b7b403a34f7cbd719e95fda764ac.r2.dev/%E6%96%B9%E6%AD%A3%E5%B0%91%E6%9E%97%E5%8A%9F%E5%A4%AB%E4%BD%93%2B%E7%AE%80.TTF');\n}"
+              }
+            >
+              {children}
+            </EmbedCss>
+          </SanityCredentialsProvider>
         </AntdConfigProvider>
       </CmsCredentialsProvider>
     </ParallaxProviderWrapper>

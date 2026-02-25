@@ -527,6 +527,60 @@ function PlasmicPageLayout__RenderFunc(props: {
             </div>
           </div>
         </div>
+        <div
+          className={classNames(
+            projectcss.all,
+            projectcss.__wab_text,
+            sty.text__ysacU
+          )}
+        >
+          {
+            "\u00a9 2026 \u96ea\u9686\u5c11\u6797\u6587\u5316\u534f\u4f1a. All Rights Reserved"
+          }
+        </div>
+        <div className={classNames(projectcss.all, sty.freeBox__f6Dx)}>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__syvCm
+            )}
+          >
+            {"Designed using Plasmic, by \u5218\u6052\u96e8 "}
+          </div>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link__cauFf
+            )}
+            component={Link}
+            href={"https://github.com/B83C/"}
+            platform={"gatsby"}
+            target={"_blank"}
+          >
+            <Icon5Icon
+              className={classNames(projectcss.all, sty.svg__lAv5J)}
+              role={"img"}
+            />
+          </PlasmicLink__>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link__bhJsb
+            )}
+            component={Link}
+            href={"https://www.linkedin.com/in/lhyb83c/"}
+            platform={"gatsby"}
+            target={"_blank"}
+          >
+            <Icon28Icon
+              className={classNames(projectcss.all, sty.svg__ueZpe)}
+              role={"img"}
+            />
+          </PlasmicLink__>
+        </div>
       </div>
     </RichLayout>
   ) as React.ReactElement | null;

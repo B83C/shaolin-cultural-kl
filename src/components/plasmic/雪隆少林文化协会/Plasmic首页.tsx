@@ -213,6 +213,7 @@ function Plasmic首页__RenderFunc(props: {
                       controls={false}
                       loop={true}
                       playsInline={true}
+                      preload={"auto"}
                       ref={ref => {
                         $refs["htmlVideo"] = ref;
                       }}

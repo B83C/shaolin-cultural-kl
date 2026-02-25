@@ -659,6 +659,20 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/愿景"
+        },
+        {
+          "id": "mNk97f8Cyt8o",
+          "name": "Content",
+          "type": "managed",
+          "projectId": "sXCRtjYKZPsLyt67ZBQv6B",
+          "renderModuleFilePath": "plasmic/雪隆少林文化协会/PlasmicContent.tsx",
+          "importSpec": {
+            "modulePath": "../pages/content.tsx"
+          },
+          "cssFilePath": "plasmic/雪隆少林文化协会/PlasmicContent.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/content"
         }
       ],
       "icons": [
@@ -781,6 +795,21 @@
           "id": "-dYnXEyjcb-d",
           "name": "Icon14Icon",
           "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon14.tsx"
+        },
+        {
+          "id": "Eif9-yi5c7zy",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "T_Bx_3Wa6Re9",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon7.tsx"
+        },
+        {
+          "id": "yQFk0xVjJmXV",
+          "name": "Icon9Icon",
+          "moduleFilePath": "plasmic/雪隆少林文化协会/icons/PlasmicIcon__Icon9.tsx"
         }
       ],
       "images": [
@@ -27920,6 +27949,68 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_embed_css/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/plasmic_embed_css/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "displayName": "global-embed-css",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "GTgVzsUHzMuCMexkxJk8C",
+      "projectApiToken": "1G7p9CRfRqoVA2FoUWW7jq7l6dnhLYhEGxFZBtm916KmPLvtWhOxDVtqvQ65NRsvjNRcH4R7UlEhJJkj6AQ",
+      "projectName": "plasmic-sanity-io",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_sanity_io/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_sanity_io/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/plasmic_sanity_io/PlasmicStyleTokensProvider.tsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/plasmic_sanity_io/plasmic.tsx",
+      "codeComponents": [
+        {
+          "id": "9KPt6XktlFK",
+          "name": "SanityFetcher",
+          "displayName": "SanityFetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "7avTLOjB-zZ",
+          "name": "SanityField",
+          "displayName": "SanityField",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
+        },
+        {
+          "id": "XenoJpDQeDb",
+          "name": "SanityCredentialsProvider",
+          "displayName": "SanityCredentialsProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-sanity-io"
         }
       ],
       "customFunctions": []
